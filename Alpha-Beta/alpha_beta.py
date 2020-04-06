@@ -20,7 +20,7 @@ def is_game_over(node):
 
 def generate_children(node, chosen_symbol): # TODO: Create a function to generate the children states for minimax evaluation
     
-    symbol = alternate_symbol(chosen_symbol)
+    #symbol = alternate_symbol(chosen_symbol)
     nodes_generated = []
     i = 0
     symbol_indice=[]
@@ -33,7 +33,7 @@ def generate_children(node, chosen_symbol): # TODO: Create a function to generat
     num = 0   
     while(num< len(symbol_indice):
         new_children = node.copy()          
-        new_children[symbol_indice[num]]=symbol
+        new_children[symbol_indice[num]]=chosen_symbol
         nodes_generated.append(new_children)
     
         print(new_children)       
